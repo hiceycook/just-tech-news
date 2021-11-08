@@ -4,7 +4,12 @@ const sequelize = require('../config/connection');
 
 
 // create our User model
-class User extends Model { }
+class User extends Model {
+    //User method to compare plaintext to bcrypt password//
+    checkPassword(loginPW) {
+        return bcrypt.compareSync(loginPW, this.password);
+    }
+};
 
 // define table columns and configuration
 User.init(
