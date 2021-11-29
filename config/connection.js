@@ -1,3 +1,5 @@
+//HEROKU DEPLOYMENT: AFTERNOON-HOLLOWS-03055//
+
 const Sequelize = require('sequelize');
 
 require('dotenv').config();
