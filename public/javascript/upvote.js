@@ -23,5 +23,5 @@ async function upvoteClickHandler(event) {
 }
 
 
-// grab the button from page
+// grab the button from page and apply handler logic
 document.querySelector('.upvote-btn').addEventListener('click', upvoteClickHandler);

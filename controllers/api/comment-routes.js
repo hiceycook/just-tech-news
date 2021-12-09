@@ -18,16 +18,19 @@ router.get('/', (req, res) => {
 
 router.post('/', (req, res) => {
     //expects {"comment_text": "lorem ipsum", "user_id": 1, "post_id": 1}
-    Comment.create({
-        comment_text: req.body.comment_text,
-        user_id: req.body.user_id,
-        post_id: req.body.post_id,
-    })
-        .then(dbCommentData => res.json(dbCommentData))
-        .catch(err => {
-            console.log(err);
-            res.status(404).json(err);
-        });
+    //check if session
+    if (req.session) {
+        Comment.create({
+            comment_text: req.body.comment_text,
+            post_id: req.body.post_id,
+            user_id: req.session.user_id,
+        })
+            .then(dbCommentData => res.json(dbCommentData))
+            .catch(err => {
+                console.log(err);
+                res.status(404).json(err);
+            });
+    }
 });
 
 router.delete('/:id', (req, res) => {
