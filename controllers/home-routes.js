@@ -3,7 +3,7 @@ const sequelize = require('../config/connection');
 const { Post, User, Comment } = require('../models');
 
 
-// Homepage Posts Route
+// Homepage Route
 router.get('/', (req, res) => {
     console.log(req.session);
 
@@ -33,7 +33,10 @@ router.get('/', (req, res) => {
         .then(dbPostData => {
             // pass a single post object into the homepage template
             const posts = dbPostData.map(post => post.get({ plain: true }));
-            res.render('homepage', { posts });
+            res.render('homepage', {
+                posts,
+                loggedIn: req.session.loggedIn
+            });
         })
         .catch(err => {
             console.log(err);
@@ -90,7 +93,7 @@ router.get('/post/:id', (req, res) => {
             const post = dbPostData.get({ plain: true });
 
             // pass data to template
-            res.render('single-post', { post });
+            res.render('single-post', { post, loggedIn: req.session.loggedIn });
         })
         .catch(err => {
             console.log(err);
