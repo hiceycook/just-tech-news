@@ -10,9 +10,11 @@
     color: #333;
   }
   
+
+  /* #32a793 */
   a {
     text-decoration: none;
-    color: #225ca3;
+    color: #32a793;
     font-weight: bold;
     transition: color .1s;
   }
@@ -22,7 +24,7 @@
   }
   
   button {
-    background-color: #225ca3;
+    background-color: #32a793;
     border: 0;
     padding: 1%;
     color: white;
@@ -97,7 +99,7 @@
     padding: 0;
     cursor: pointer;
     text-decoration: none;
-    color: #225ca3;
+    color: #32a793;
     font-size: 100%;
     font-weight: bold;
     transition: color .1s;
@@ -131,6 +133,8 @@
   .edit-link {
     display: block;
     margin: -1.5% 0 2% 0;
+    color: rgb(163, 163, 163);
+    font-style: italic;
   }
   
   .upvote-btn {
@@ -152,13 +156,23 @@
   }
   
   .comment:nth-child(odd) {
-    background-color: #fff5eb;
+    background-color: #32a7941a;
   }
   
+.add-comment{
+  background-color: #206b5f;
+}
+  #logout {
+    color: #206b5f;
+  }
   .comment .meta {
     font-size: 90%;
     margin-bottom: .5%;
     opacity: .6;
+  }
+
+  .comment-count {
+    color: #206b5f;
   }
   
   .new-post-form input {
