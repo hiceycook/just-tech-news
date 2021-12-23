@@ -1,5 +1,3 @@
-
-
 module.exports = {
     //date format Helper
     format_date: date => {
