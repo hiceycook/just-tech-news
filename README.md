@@ -19,5 +19,6 @@ CSS
 Simply click the login button to login or sign up. Use your dashboard to post and manage your posts. Comment and upvote on other users' posts.
 
 ## Deployment
-<a href="https://limitless-fortress-00756.herokuapp.com/" target="_blank">Click Here</a>
+[link](https://limitless-fortress-00756.herokuapp.com/){:target="_blank"}
+
 
