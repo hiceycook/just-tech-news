@@ -23,6 +23,10 @@
     color: #3486eb;
   }
   
+.page-title{
+  font-size:1.5rem;
+}
+
   button {
     background-color: #32a793;
     border: 0;
@@ -189,4 +193,8 @@
     justify-content: center;
     padding: 1%;
     font-size: 110%;
+  }
+
+  .tech{
+    color: #206b5f;
   }
