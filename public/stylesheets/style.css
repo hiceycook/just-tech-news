@@ -19,13 +19,9 @@
     transition: color .1s;
   }
   
-  a:hover {
-    color: #3486eb;
-  }
+
   
-.page-title{
-  font-size:1.5rem;
-}
+
 
   button {
     background-color: #32a793;
@@ -199,9 +195,26 @@
     font-size: 110%;
   }
 
+  .page-title{
+    font-size:1.5rem;
+  }
+
+  h1:hover{
+    cursor: pointer;
+  }
+
+  a:hover {
+    color: #3486eb;
+  }
+
   .tech{
     color: #206b5f;
   }
+
+  .page-title:hover{
+    color: #32a793;
+  }
+
   .tech:hover{
-  color: #3486eb;
+    color:#206b5f;
   }
