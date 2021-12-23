@@ -166,8 +166,12 @@
 .add-comment{
   background-color: #206b5f;
 }
+
   #logout {
     color: #206b5f;
+  }
+  #logout:hover{
+   color: #3486eb;
   }
   .comment .meta {
     font-size: 90%;
@@ -197,4 +201,7 @@
 
   .tech{
     color: #206b5f;
+  }
+  .tech:hover{
+  color: #3486eb;
   }
