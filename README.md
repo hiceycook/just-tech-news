@@ -13,7 +13,7 @@ HTML
 CSS
 
 ## Preview
-![Screenshot](assets/screenshot.png)
+![Screenshot](/public/assets/screenshot.png)
 
 ## Instructions
 Simply click the login button to login or sign up. Use your dashboard to post and manage your posts. Comment and upvote on other users' posts.
